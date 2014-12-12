@@ -1,0 +1,109 @@
+@font-face {
+	font-family: FranklinGothicBook;
+	src: url("../fonts/FRABK.TTF");
+	/*font-weight: bold;*/
+}
+@font-face {
+	font-family: FranklinGothicDemiCond;
+	src: url("../fonts/FRADMCN.TTF");
+	font-weight: bold;
+}
+body {
+ background: url("../img/bg_ld.gif") top center;
+}
+
+
+/* header */
+.ld_logo {
+    margin-top: 15px;
+}
+.cabinet div {
+    margin-top: 15px;
+    float: left;
+    font-family: "FranklinGothicBook";
+    font-size: 14px;
+    margin-right: 10px;
+    color: #aeaeae;
+}
+
+
+/* center sections */
+.drawing {
+    background: url("../img/menu_drawing.png") no-repeat;
+    height: 250px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+    .drawing .content {
+        position: absolute;
+        bottom: 0;
+        left: 22px;
+    }
+    .drawing_title{
+        font-family: "FranklinGothicDemiCond";
+        font-size: 50px;
+        line-height: 42px;
+    }
+
+    .drawing_text {
+        font-family: "FranklinGothicBook";
+        font-size: 18px;
+    }
+
+    .labele {
+        background: #8b1214;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: "FranklinGothicBook";
+        font-size: 18px;
+        color: #ffffff;
+        padding: 3px 10px;
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdhMTMxNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNjE5MjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(left,  rgba(122,19,21,1) 0%, rgba(214,25,33,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(122,19,21,1)), color-stop(100%,rgba(214,25,33,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(122,19,21,1) 0%,rgba(214,25,33,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(122,19,21,1) 0%,rgba(214,25,33,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(122,19,21,1) 0%,rgba(214,25,33,1) 100%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(122,19,21,1) 0%,rgba(214,25,33,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a1315', endColorstr='#d61921',GradientType=1 ); /* IE6-8 */
+
+
+
+    }
+
+
+.news {
+    background: url("../img/menu_news.png") no-repeat;
+    height: 250px;
+}
+
+.prize {
+    background: url("../img/menu_prize.png") no-repeat;
+    height: 250px;
+
+}.poll {
+    background: url("../img/menu_poll.png") no-repeat;
+    height: 250px;
+}
+
+.your_day{
+    background: url("../img/menu_day.png") no-repeat;
+    height: 250px;
+}
+
+/* footer */
+.warning {
+    background: #d71920;
+    height: 105px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+    .warning .msg{
+        background: url("../img/warning.png") no-repeat;
+        position: relative;
+        z-index: 2;
+    }
