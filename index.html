@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>LD</title>
+    <title>ReaLDay.kz</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
@@ -11,111 +11,135 @@
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
-                <img src="img/logo.png" alt=""/>
-            </div>
-            <div class="col-lg-6 ld_logo">
-                <img src="img/website_logo.png" alt=""/>
-            </div>
-            <div class="col-lg-4">
-                <div class="cabinet">
-                    <div>
-                        <img src="img/cabinet_user.png" alt=""/>
-                        личный кабинет
-                    </div>
-                    <div>
-                        <img src="img/cabinet_msg.png" alt=""/>
-                        обратная связь
-                    </div>
-                    <div>
-                        <img src="img/cabinet_logout.png" alt=""/>
-                        выход
+<div class="container" id="center_container">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-3 logo">
+                    <img src="img/logo.png" alt=""/>
+                </div>
+                <div class="col-lg-6 col-md-3 col-sm-2 ld_logo">
+                    <img src="img/website_logo.png" alt=""/>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="cabinet">
+                        <a class="user_lnk" href="">личный кабинет</a>
+                        <a class="msg_lnk" href="">обратная связь</a>
+                        <a class="logout_lnk" href="">выход</a>
                     </div>
                 </div>
             </div>
+            <!--menu-->
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-10 col-md-offset-3 col-md-9 col-sm-offset-3 col-sm-9 main_menu">
+                    <hr/>
+                    <ul>
+                        <li><a href="#"><span class="menu_numbers">1/</span>МИР LD </a></li>
+                        <li><a href="#"><span class="menu_numbers">2/</span>Розыгрыш</a></li>
+                        <li><a href="#"><span class="menu_numbers">3/</span>Каталог призов</a></li>
+                        <li><a href="#"><span class="menu_numbers">4/</span>Твой день </a></li>
+                        <li><a href="#"><span class="menu_numbers">5/</span>Опрос</a></li>
+                        <li><a href="#"><span class="menu_numbers">6/</span>Новости</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </header>
+
+    <div id="main">
+        <div class="top-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slider">
+                            <div class="slider_content">
+                                <p class="slogan">ПРЕДСТАВЛЯЕМ</p>
+                                <p class="cursive">обновленный  дизайн</p>
+                                <p class="packtype">ПАЧЕК СИГАРЕТ LD KS&SS</p>
+                                <div class="clearing"></div>
+                                <p class="longtext">Объемные элементы, серебристые линии и фирменная подпись
+                                    <span class="menu_numbers">Liggett Ducat</span> -
+                                    свидетельство неизменного качества</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--<div class="clearing"></div>-->
+        <!--banner blocks-->
+        <section class="first-menu-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-6 menu-block">
+                        <div class="labele">РОЗЫГРЫШ</div>
+                        <div class="drawing">
+                            <div class="big_menu_content">
+                                <p class="big_menu_title">ПИКНИК ДЛЯ ДВОИХ</p>
+                                <p class="big_menu_text">ПРОЙДИ КВЕСТ ЗА 15 МИНУТ <br/> И ПОЛУЧИ +30 БАЛЛОВ НА ТВОЙ БАЛЛАНС</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 menu-block">
+                        <div class="labele">Новости</div>
+                        <div class="news">
+                            <div class="small_menu_content">
+                                <div class="small_menu_title">ЗНАКОМИМСЯ В МЕТРО</div>
+                                <div class="menu_text">НЕ ТЕРЯЕМ ВРЕМЕНИ 5 ДЕЛЬНЫХ СОВЕТОВ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--?-->
+        <!--<div class="clearing"></div>-->
+        <!--?-->
+
+        <section class="second-menu-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 menu-block">
+                        <div class="labele">Приз</div>
+                        <div class="prize">
+                            <div class="small_menu_content">
+                                <div class="small_menu_title red">НЕПЛОХИЕ <br/>ОЧКИ</div>
+                                <div class="menu_text grey">ЗАКАЖИ ДО 8 ДЕКАБРЯ ОСТАЛОВЬ ВСЕГО ПАРУ ШТУК</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 menu-block">
+                        <div class="labele">Опрос</div>
+                        <div class="poll">
+                            <div class="small_menu_content">
+                                <div class="small_menu_title">УЗНАЙ О КОМ ТЫ ВЗДЫХАЕШЬ</div>
+                                <div class="menu_text">ЗАГЛЯНИ ВГЛУБЬ СЕБЯ И ПОЛУЧИ +10 БАЛЛОВ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 menu-block">
+                        <div class="labele">Твой день</div>
+                        <div class="your_day">
+                            <div class="big_menu_content">
+                                <div class="big_menu_title red">СТРОИМ <br/>ГЛАЗКИ</div>
+                                <div class="big_menu_text grey">ДОБАВЬ В ГАЛЕРЕЮ ФОТО ТВОЕЙ УЛЫБКИ И ПОЛУЧИ +5 БАЛЛОВ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clearfix">&nbsp;</div>
     </div>
-</header>
-
-<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
-    <!--<div class="container">-->
-        <!--<div class="navbar-header">-->
-            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"-->
-                    <!--aria-expanded="false" aria-controls="navbar">-->
-                <!--<span class="sr-only">Toggle navigation</span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-            <!--</button>-->
-            <!--<a class="navbar-brand" href="#">Project name</a>-->
-        <!--</div>-->
-        <!--<div id="navbar" class="collapse navbar-collapse">-->
-            <!--<ul class="nav navbar-nav">-->
-                <!--<li class="active"><a href="#">Home</a></li>-->
-                <!--<li><a href="#about">About</a></li>-->
-                <!--<li><a href="#contact">Contact</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-        <!--&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
-    <!--</div>-->
-<!--</nav>-->
-
-<div class="top-banner">
-    <div class="container">
-
-    </div>
+    <div class="clearing"></div>
 </div>
-
-<!--banner blocks-->
-<section class="first-menu-block">
-<div class="container">
-    <div class="row">
-        <div class="col-lg-9">
-            <div class="drawing">
-                <div class="col-lg-2">
-                    <div class="labele">РОЗЫГРЫШ</div>
-                </div>
-                <div class="col-lg-4 content">
-                    <p class="drawing_title">ПИКНИК ДЛЯ ДВОИХ</p>
-                    <p class="drawing_text">ПРОЙДИ КВЕСТ ЗА 15 МИНУТ И ПОЛУЧИ +30 БАЛЛОВ НА ТВОЙ БАЛЛАНС</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="news"></div>
-        </div>
-    </div>
-</div>
-</section>
-
-<!--?-->
-<div style="width: 100%; height: 25px;"></div>
-<!--?-->
-
-<section class="second-menu-block">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="prize"></div>
-            </div>
-            <div class="col-lg-3">
-                <div class="poll"></div>
-            </div>
-            <div class="col-lg-6">
-                <div class="your_day"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!--footer-->
 <footer>
-    <div class="warning">
-        <!--<img src="img/warning.png" alt=""/>-->
-        <div class="msg"></div>
+    <div class="container">
+        <img src="img/warning.png" alt=""/>
     </div>
 </footer>
 </body>
