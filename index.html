@@ -2,26 +2,31 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>ReaLDay.kz</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jcarousel.skeleton.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
-    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jcarousel.skeleton.js"></script>
+
 </head>
 <body>
 
 <div class="container" id="center_container">
     <header>
-        <div class="container">
+        <div>
             <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-3 logo">
                     <img src="img/logo.png" alt=""/>
                 </div>
-                <div class="col-lg-6 col-md-3 col-sm-2 ld_logo">
+                <div class="col-lg-6 col-md-3 hidden-sm ld_logo">
                     <img src="img/website_logo.png" alt=""/>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="col-lg-4 col-md-6 col-sm-7 col-sm-offset-2 col-lg-offset-0 col-md-offset-0">
                     <div class="cabinet">
                         <a class="user_lnk" href="">личный кабинет</a>
                         <a class="msg_lnk" href="">обратная связь</a>
@@ -46,31 +51,81 @@
         </div>
     </header>
 
-    <div id="main">
-        <div class="top-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="slider">
-                            <div class="slider_content">
-                                <p class="slogan">ПРЕДСТАВЛЯЕМ</p>
-                                <p class="cursive">обновленный  дизайн</p>
-                                <p class="packtype">ПАЧЕК СИГАРЕТ LD KS&SS</p>
-                                <div class="clearing"></div>
-                                <p class="longtext">Объемные элементы, серебристые линии и фирменная подпись
-                                    <span class="menu_numbers">Liggett Ducat</span> -
-                                    свидетельство неизменного качества</p>
+    </div>
+
+<!--Slider-->
+<div class="top-banner-wrapper jcarousel-wrapper">
+    <div class="jcarousel">
+        <ul>
+            <li>
+                <div class="top-banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="slider">
+                                    <div class="slider_content">
+                                        <p class="slogan">ПРЕДСТАВЛЯЕМ</p>
+
+                                        <p class="cursive">обновленный дизайн</p>
+
+                                        <p class="packtype">ПАЧЕК СИГАРЕТ LD KS&SS</p>
+
+                                        <div class="clearing"></div>
+                                        <p class="longtext">Объемные элементы, серебристые линии и фирменная подпись
+                                            <span class="menu_numbers">Liggett Ducat</span> -
+                                            свидетельство неизменного качества</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </li>
+            <li>
+                <div class="top-banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="slider">
+                                    <div class="slider_content">
+                                        <p class="slogan">ПРЕДСТАВЛЯЕМ</p>
 
-            </div>
-        </div>
+                                        <p class="cursive">обновленный дизайн</p>
+
+                                        <p class="packtype">ПАЧЕК СИГАРЕТ LD KS&SS</p>
+
+                                        <div class="clearing"></div>
+                                        <p class="longtext">Объемные элементы, серебристые линии и фирменная подпись
+                                            <span class="menu_numbers">Liggett Ducat</span> -
+                                            свидетельство неизменного качества</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.top-banner-wrapper ul li').css('width', $(window).width() + 'px');
+
+        $(window).resize(function () {
+            $('.top-banner-wrapper ul li').css('width', $(window).width() + 'px');
+        })
+    });
+</script>
+
+<div class="container">
+    <div id="main">
+
         <!--<div class="clearing"></div>-->
         <!--banner blocks-->
         <section class="first-menu-block">
-            <div class="container">
+            <div>
                 <div class="row">
                     <div class="col-lg-9 col-md-9 col-sm-6 menu-block">
                         <div class="labele">РОЗЫГРЫШ</div>
@@ -99,7 +154,7 @@
         <!--?-->
 
         <section class="second-menu-block">
-            <div class="container">
+            <div>
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 menu-block">
                         <div class="labele">Приз</div>
@@ -139,7 +194,11 @@
 <!--footer-->
 <footer>
     <div class="container">
-        <img src="img/warning.png" alt=""/>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <img src="img/warning.png" width="100%" alt=""/>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
